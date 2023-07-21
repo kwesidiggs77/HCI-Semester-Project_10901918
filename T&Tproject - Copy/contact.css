@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap');
+
+
+*{
+	margin: 0;
+	padding: o;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .2s linear;
+	font-family: 'Poppins'  , sans-serif;
+}
+
+html{
+
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+
+section{
+
+	padding: 5rem 9% ;
+}
+
+
+.header{
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    display: flex;
+	align-items: center;
+	padding: 20px 100px;
+	justify-content: space-between;
+	z-index: 100;
+
+}
+
+.logo{
+
+	font-size: 32px;
+	color: white;
+	text-decoration:none;
+	font-weight: 700;
+
+
+}
+
+nav{
+
+
+}
+
+.nav a {
+
+	position: relative;
+	align-items: center;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	margin-left: 40px;
+	font-weight: 500;
+    align-items: center;
+}
+
+.nav a::before{
+
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: white;
+	transition: .3s;
+}
+
+.nav a:hover::before{
+
+	width: 100%;
+
+}
+
+.back{
+
+	width: 100%;
+	height: 100vh;
+	background: url('images/Brenu-Beach.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	filter: blur(8px);
+}
+
+
+.container{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	height: 550px;
+	background: url('images/Brenu-Beach.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 20px 60px 40px 40px;
+	align-items: center;
+	
+}
+
+.container .content{
+
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+	width: 58%;
+	height: 100%;
+	background: transparent;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.container .content .text{
+
+	color: white;
+	font-size: 16px;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container .content .text i{
+
+	font-size: 25px;
+	font-weight: 50px;
+	padding-bottom: 5px;
+	color: lightgreen;
+}
+
+.container .content .text .topic{
+
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.container .content .text .text-one,.text-two{
+
+	
+	opacity: 0.9;
+}
+
+
+.container .content .text .text-two{
+
+	padding-bottom: 10px;
+}
+
+.social-icons a{
+
+	padding-left: 10px;
+}
+
+.social-icons a:hover{
+
+	opacity: 0.6;
+}
+
+
+
+
+
+.container .form{
+     position: absolute;
+    right: 0;
+    top: 0;
+	width: calc(100% - 58%);
+	height: 100%;
+	
+}
+
+.form .form-box{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	backdrop-filter: blur(20px);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+
+.con-me .input-box{
+
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+.con-me .input-box input{
+
+     width: 400px;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     outline: none;
+     border: none;
+     background: transparent;
+     border-bottom: 2px solid white;
+     color: white;
+ }
+
+ textarea{
+ 	
+ 	 width: 400px;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     outline: none;
+     resize: none;
+     border: none;
+     background: transparent;
+     border-bottom: 2px solid white;
+     color: white;
+}
+
+ .input-box span{
+
+ 	position: absolute;
+ 	padding: 5px 0;
+ 	font-size: 16px;
+ 	margin: 10px 0;
+ 	pointer-events: none;
+ 	transition: 0.5s;
+    color: white;
+    left: 0;
+ }
+
+ .input-box input:focus ~ span, .input-box input:valid ~ span
+ .input-box textarea:focus ~ span, .input-box textarea:valid ~ span{
+
+ 	transform: translateY(-20px);
+ 	font-size: 10px;
+ }
+
+.input-box input[type = "submit"]{
+
+	width: 100px;
+	margin-top: 1rem;
+	display: inline-block;
+	border: .2rem solid grey;
+	color: white;
+	cursor: pointer;
+	background: none;
+	font-size: 1,7rem;
+	padding: 1rem 3rem;
+}
+
+.input-box input[type = "submit"]:hover{
+
+	background: black;
+     color: white;
+}
+
+
+
+

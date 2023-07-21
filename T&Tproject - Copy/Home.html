@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mega Travels</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="">
+
+<header>
+
+	<a href="#" class="C-name"> Mega</a>
+		
+	     <div class="navigation">
+             <div class="navigation-items">
+
+	    	     <a href="#"> Discover </a>
+			     <a href="#"> Packages </a>
+			     <a href="#"> Contact Us </a>
+			     <a href="#"> About Us </a>
+		     </div>
+	     </div>
+		
+ </header>
+
+ <section class="home">
+
+ 	 <video src="images/Video0_1.mp4" autoplay muted loop class="video-slider"></video>
+ 	 <video src="images/Video0_2.mp4" autoplay muted loop class="video-slider"></video>
+ 	 <video src="images/Video0_3.mp4" autoplay muted loop class="video-slider"></video>
+ 	
+
+
+     <div class="content">
+	
+           <h1> Mega <span>Travels</span></h1>
+           <p>Cloud computing has revolutionized the delivery of a solutions and enterprise applications for countless businesses across the globe. Before the introduction of cloud computing most companies had to store large amounts of important data locally on hard drives and storage platforms.  The whole concept of cloud computing first became popular in the early 1960s, the terminology was associated with IBM and DEC due to its rapid growth cloud computing systems were available for use in the 1970s. This paper presents an overview of cloud computing, covering its essential concepts, benefits, challenges, exploring the components that make up the cloud, including servers, storage, networks, and virtualization. Cloud Computing in recent years has helped improve the operations of various countries in Ghana the document dictates some ways in which cloud computing services are used by businesses in Ghana including the different types of cloud service providers.</p>
+
+           <a href="#">Go</a>
+
+     
+     </div>   
+
+     <div class="slider-nav">
+
+     	 <div class="nav active"></div>
+     	 <div class="nav"></div>
+     	 <div class="nav"></div>
+    
+     </div>
+
+ </section>
+
+ <section class="discover">
+
+<div class="image-slider">
+        
+        <div class="img-sli active ">
+            <img src="images/about-1.jpg">
+            <div class="info">
+            	<h2>Travel with us<h2>
+                   <p>ncluding servers, storage, networks, and virtualization. Cloud Computing in recent years has helped improve the operations of various countries in Ghana the document dictates some ways in which cloud computing services</p>
+            </div>
+        </div>
+         <div class="img-sli">
+            <img src="images/about-1.jpg">
+            <div class="info">
+            	<h2>Travel with us<h2>
+                   <p>ncluding servers, storage, networks, and virtualization. Cloud Computing in recent years has helped improve the operations of various countries in Ghana the document dictates some ways in which cloud computing services</p>
+            </div>
+        </div>
+         <div class="img-sli">       
+            <img src="images/about-1.jpg"> 
+            <div class="info">
+            	<h2>Travel with us<h2>
+                   <p>ncluding servers, storage, networks, and virtualization. Cloud Computing in recent years has helped improve the operations of various countries in Ghana the document dictates some ways in which cloud computing services</p>
+            </div>       
+        </div>
+        <div class="img-sli">
+            <img src="images/about-1.jpg">
+            <div class="info">
+            	<h2>Travel with us<h2>
+                   <p>ncluding servers, storage, networks, and virtualization. Cloud Computing in recent years has helped improve the operations of various countries in Ghana the document dictates some ways in which cloud computing services</p>
+            </div>       
+       </div>
+       <div class="naviga">
+       	<div class="btn active"></div>
+       	<div class="btn"></div>
+       	<div class="btn"></div>
+       	<div class="btn"></div>
+       </div>
+ </div>
+
+   
+
+</section>
+
+<script type="text/javascript">
+	
+const btns = document.querySelectorAll(".nav");
+const slides = document.querySelectorAll(".video-slider");
+var slider = function (manual) {
+    btns.forEach((btn) => {
+	btn.classList.remove("active");
+
+     });
+
+   slides.forEach((slide) => {
+	slide.classList.remove("active");
+
+     });
+
+	btns[manual].classList.add("active");
+	slides[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+	btn.addEventListener("click", () =>{
+
+		slider(i);
+	});
+
+});
+
+ var slides = document.querySelectorAll(".img-slides");
+  var btns = document.querySelectorAll(".btn");
+    let currentslide = 1;
+
+
+
+var manualNav = function (manual) {
+    slides.forEach((slide) => {
+	slide.classList.remove("active");
+
+     
+
+   btns.forEach((slide) => {
+	btn.
+
+     });
+    });
+
+	btns[manual].classList.add("active");
+	slides[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+	btn.addEventListener("click", () =>{
+
+		manualNav(i);
+		currentslide = i;
+	});
+
+});
+
+var repeat = function(activeClass){
+
+     let active = document.getElementsByClassName('active');
+     let i = 1;
+
+var repeater= () =>{
+
+	setTimeout(function(){
+
+		[...active].forEach((activeSlide) => {
+
+			activeSlide.classList.remove('active')
+		})
+
+		slides[i].classlist.add('active');
+		btns[i].classlist.add('active');
+		i++;
+
+		if ( slides.length == i) {
+
+			i= 0
+		}
+
+		if (i>= slides.length ) {
+
+			return;
+		}
+
+		repeater();
+
+	}, 10000)
+}
+repeater();
+}
+repeat();
+</script>
+
+
+
+
+
+
+
+<</body>
+</html>
